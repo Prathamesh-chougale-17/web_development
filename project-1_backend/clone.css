@@ -1,0 +1,272 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: url('bg3.jpg') no-repeat center center/cover;
+}
+
+#navbar {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    align-items: center;
+    z-index: 15;
+}
+
+#navbar div {
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+#imga-1 {
+    margin: 20px 40px;
+}
+
+#navbar::before {
+    content: "";
+    position: absolute;
+    background-color: black;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+
+#imga-1 img {
+    height: 59px;
+}
+
+#navbar div ul {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+#navbar div li {
+    margin: 0px 10px;
+    list-style: none;
+    /* align-items: center; */
+}
+
+#navbar div a {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: large;
+    /* background-color: aliceblue; */
+}
+
+#navbar div a:hover {
+    background-color: aliceblue;
+    border-radius: 20px;
+    color: black;
+}
+
+/* home */
+#home {
+    display: flex;
+    justify-content: center;
+}
+
+#home-box {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    color: white;
+}
+
+#home-box h2 {
+    font-size: 50px;
+    margin-top: 160px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: white;
+}
+
+#home-box p {
+    font-size: 25px;
+    text-align: center;
+}
+
+.button {
+    font-size: 30px;
+    padding: 0px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 109px;
+    cursor: pointer;
+    background-color: red;
+    border: 2px solid white;
+    color: white;
+}
+
+/* service */
+
+#service {
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+}
+
+#service-box1 {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+#service-box1 h1 {
+    font-size: 4rem;
+}
+
+#service-box2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.centre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-sub-box {
+    max-width: 300px;
+    min-width: 200px;
+    /* height: 500px; */
+    border: 2px solid brown;
+    background-color: rgb(234, 231, 231);
+    border-radius: 30px;
+    margin: 20px 55px 60px 55px;
+    padding: 20px;
+}
+
+.service-sub-box img {
+    height: 160px;
+    margin: 10px;
+}
+
+.service-sub-box h1 {
+    font-size: 2rem;
+    margin: 10px;
+}
+
+.service-sub-box p {
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+/* client */
+
+#client-box1 h1 {
+    font-size: 4rem;
+    margin: 20px;
+}
+
+#client-box-2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#client-box-2 img {
+    margin: 30px 40px;
+    /* border: 2px solid red; */
+    height: 160px;
+    width: 160px;
+}
+
+#client {
+    /* while adding background in before your parent should have position relative */
+    position: relative;
+}
+
+#client::before {
+    content: "";
+    background: url('bg2.jpg') no-repeat center center/cover;
+    /* border: 2px solid red; */
+    position: absolute;
+    /* this is impotant */
+    width: 100%;
+    height: 100%;
+    /* */
+    opacity: 0.5;
+    z-index: -1;
+}
+
+/* contact */
+
+#contact-box label {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    background: url('bg3.jpg') no-repeat top center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+#contact-box h1 {
+    font-size: 4rem;
+    margin: 20px;
+}
+
+.yourinfo {
+    /* width: 600px; */
+    margin: 10px;
+}
+
+.yourinfo input {
+    width: 600px;
+    height: 40px;
+    box-shadow: -1px -1px black;
+    border-radius: 8px;
+    font-size: large;
+    padding-left: 6px;
+    /* margin: 10px; */
+}
+
+.yourinfo textarea {
+    width: 600px;
+    height: 400px;
+    font-size: large;
+    padding: 6px;
+    /* columns: 60; */
+    box-shadow: -1px -1px black;
+    border-radius: 8px;
+    /* margin: 10px; */
+}
+
+/* footer */
+
+footer div {
+    background-color: black;
+    color: white;
+    height: 30px;
+}
