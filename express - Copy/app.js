@@ -12,17 +12,10 @@ app.set('view engine', 'pug')
 //set views directory
 app.set('views', path.join(__dirname, 'views'));
 
-app.get("/index", (req, res) => {
-    res.status(200).render('index', { title: 'Hey', message: 'Hello there!' });
-});
 app.get("/", (req, res) => {
-    res.send("This is my first homepage of express app")
-});
-app.get("/about", (req, res) => {
-    res.send("This is my first about of express app")
-});
-app.post("/about", (req, res) => {
-    res.send("This is my post requist first about of express app")
+    const con = "prathamesh is bad boy"
+    const param = { 'title': 'pug is best package', 'content': con }
+    res.status(200).render('demo.pug', param);
 });
 app.listen(port, () => {
     console.log(`this application started successfully on port ${port}`)
