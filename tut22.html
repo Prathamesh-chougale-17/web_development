@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selector & more designing</title>
+    <style>
+        .container {
+            border: 2px solid rgb(54, 35, 93);
+            background-color: antiquewhite;
+            padding: 34px;
+            margin: 34px auto;
+            width: 666px;
+        }
+
+        a {
+            text-decoration: none;
+            color: bisque;
+        }
+
+        /* a-hover mean what will you like to look the button after cursor is taken on button */
+        a:hover {
+            color: rgb(200, 92, 30);
+            background-color: burlywood;
+        }
+
+        a:visited {
+            background-color: black;
+        }
+
+        a:active {
+            background-color: aqua;
+        }
+
+        .btn {
+            background-color: aqua;
+            padding: 6px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="con1">
+        <h1>This is my heading</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint sit, deleniti nulla praesentium illum fuga
+            fugiat rem unde nihil saepe illo molestiae reiciendis earum iste repellendus dolores repudiandae asperiores
+            expedita repellat. Animi, nihil quasi?</p>
+        <a href="https://google.com" class="btn" target="_blank">read more</a>
+        <button class="btn">Contact us</button>
+    </div>
+
+</body>
+
+</html>

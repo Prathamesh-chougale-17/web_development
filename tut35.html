@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS variable/Custum Properties</title>
+    <style>
+        /* :root it acts like global variable */
+        :root {
+
+            /* --primary-color: orange; acts like a variable which can give color that u want to give to element at one and change the color of multiple boxes at once */
+            --primary-color: orange;
+            --secondary-color: red;
+            --tertiary-color: violet;
+
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            margin: 23px 13px;
+            border: 2px solid var(--primary-color);
+            background-color: var(--secondary-color);
+            box-shadow: 12px 15px var(--secondary-color);
+            /* align-items: center; */
+        }
+
+        .container {
+            width: 500px;
+            margin: auto;
+            display: flex;
+            background-color: var(--tertiary-color);
+            align-items: center;
+            justify-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

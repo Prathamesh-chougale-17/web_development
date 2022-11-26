@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope and condition</title>
+</head>
+
+<body>
+    <!-- div>ul>li{This is item-$}*8 have below as result -->
+    <div>
+        <ul>
+            <li>This is item-1</li>
+            <li>This is item-2</li>
+            <li>This is item-3</li>
+            <li>This is item-4</li>
+            <li>This is item-5</li>
+            <li>This is item-6</li>
+            <li>This is item-7</li>
+            <li>This is item-8</li>
+        </ul>
+    </div>
+    <script>
+        var string = "this is string";
+        var string = "this is string1";
+        console.log(string); //the last string overwrite all the string variable above it
+        let a = "u";
+        {
+            let a = "u6";
+            console.log(a);
+        }
+        console.log(a);
+        const b = "This is contant"; //constant cannot be changed or over written
+        // b = "just try changing";
+        console.log(b);
+        let age = 34;
+        if (age > 18) {
+            console.log("you can drink cold drink");
+        }
+        else {
+            console.log("you can drink water");
+        }
+
+        // switch and if-else statement are same as C
+        //DOM document object model
+    </script>
+</body>
+
+</html>

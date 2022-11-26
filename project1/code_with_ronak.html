@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code with Ronak</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            height: 2000px;
+        }
+
+        header {
+            /* z-index: 2;  */
+            display: flex;
+            /* border: 2px solid red; */
+            background-color: black;
+            position: fixed;
+            width: 100%;
+        }
+
+        .head-right {
+            display: flex;
+            right: 3px;
+        }
+
+        .head-mid {
+            display: flex;
+            margin: auto;
+            /* border: 2px solid red; */
+        }
+
+        .head-left {
+            display: flex;
+            height: 80px;
+            width: 150px;
+        }
+
+        header img {
+            /* height: 80px; */
+            width: 100px;
+            background-color: aqua;
+            filter: invert(100%)
+        }
+
+        ul {
+            list-style: none;
+
+        }
+
+        header ul {
+            margin: auto 10px;
+
+            /* border: 2px solid red; */
+        }
+
+        header a {
+            text-decoration: none;
+            font-size: 20px;
+            padding: 10px;
+            /* background-color: aqua; */
+            border-radius: 16px;
+            color: white;
+        }
+
+        header a:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .container-1::before {
+            content: "";
+            background: url("img1.webp") bottom left/cover;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            opacity: 0.8;
+            z-index: -1;
+        }
+
+        .container-1 div {
+            display: flex;
+            justify-content: center;
+            /* margin-top: 20px; */
+        }
+
+        .container-1 div h1 {
+            margin-top: 80px;
+            font-size: 4rem;
+            /* display: inline; */
+            /* z-index: -1; */
+        }
+
+        .container-1 div p {
+            /* display: block; */
+            margin-top: 20px;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="head-left">
+            <img src="gym.jpg" alt="">
+        </div>
+        <div class="head-mid">
+            <ul><a href="#">Home</a></ul>
+            <ul><a href="#">About</a></ul>
+            <ul><a href="#">Service</a></ul>
+            <ul><a href="#">Our project</a></ul>
+            <ul><a href="#">Contact us</a></ul>
+        </div>
+        <div class="head-right">
+            <ul><a href="#">Sign up</a></ul>
+            <ul><a href="#">Login</a></ul>
+            <!-- <ul>
+                <a href="#">Sign Up</a>
+                <a href="#">Sign In</a>
+            </ul> -->
+        </div>
+    </header>
+    <div class="container-1">
+        <div class="ax">
+            <h1>Welcome To Ronak Gym</h1>
+        </div>
+        <div>
+            <p>Health is Wealth</p>
+        </div>
+    </div>
+    <div class="container-2">
+
+    </div>
+    <div class="container-3"></div>
+    <footer></footer>
+</body>
+
+</html>

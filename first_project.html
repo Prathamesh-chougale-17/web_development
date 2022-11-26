@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my website</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <style>
+        body {
+            height: 2000px;
+        }
+
+        header {
+            /* box-sizing: border-box; */
+            /* border: 2px solid red; */
+            position: fixed;
+            z-index: 3;
+            /* position: absolute; */
+            /* top: 0px; */
+            box-shadow: 0px 1px 5px black;
+            top: 0px;
+            left: 0px;
+            height: 150px;
+            width: 100%;
+        }
+
+        header img {
+            opacity: 0.5;
+            height: 150px;
+        }
+
+        /* this defines position of left most element */
+        .left {
+            display: inline-block;
+            position: absolute;
+            left: 20px;
+            top: 42px;
+        }
+
+        /* this defines position of middle element */
+        .mid {
+            position: absolute;
+            display: block;
+            width: 46%;
+            /* margin: 98px auto; */
+            top: 100px;
+            left: 400px;
+            /* border: 1px solid red; */
+            /* border-bottom: 2px solid blue; */
+        }
+
+        /* this defines position of right most element */
+        .right {
+            display: inline-block;
+            position: absolute;
+            right: 20px;
+            top: 35px;
+        }
+
+        .navbar_b {
+            display: inline-block;
+
+        }
+
+        .navbar_b li {
+            float: left;
+            list-style: none;
+        }
+
+        .navbar_b li a {
+            text-decoration: none;
+            margin: 0px 11px;
+            font-size: 17px;
+            color: red;
+        }
+
+        .navbar_b a:hover {
+            position: relative;
+            bottom: 2px;
+            margin: 0px 11px;
+            border-bottom: 2px solid black;
+        }
+
+        .navbar_c {
+            display: inline-block;
+        }
+
+        .navbar_c li {
+            float: left;
+            list-style: none;
+        }
+
+        .navbar_c a {
+
+            text-decoration: unset;
+            color: black;
+            margin: 0px 10px;
+        }
+
+        .navbar_c a:hover {
+            border-bottom: 2px solid black;
+            position: relative;
+            bottom: 2px;
+        }
+
+        .search {
+            float: left;
+            position: absolute;
+            right: 20px;
+            top: 60px;
+            font-size: 25px;
+        }
+
+        .search a {
+
+            text-decoration: none;
+            color: blueviolet;
+        }
+
+        .design a {
+            padding: 6px 20px;
+            color: white;
+            background-color: blueviolet;
+            border-radius: 8px;
+        }
+
+
+        .design a:hover {
+            background-color: rgb(112, 15, 203);
+        }
+
+        .material-symbols-outlined a {
+            color: blueviolet;
+            /* position: relative; */
+            /* text-decoration: none; */
+            font-size: 32px;
+            font-variation-settings:
+                'FILL' 20,
+                'wght' 200,
+                'GRAD' 40,
+                'opsz' 88
+        }
+
+        header img {
+            position: relative;
+            z-index: -1;
+            width: 1900px;
+            height: 500px;
+        }
+
+        .container2 {
+            position: relative;
+            top: 0px;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="https://source.unsplash.com/random/1600x900" alt="">
+        <div class="left">
+            this is left
+        </div>
+        <div class="mid">
+            <nav class="navbar_b">
+                <li><a href="">HTML</a></li>
+                <li><a href="">CSS</a></li>
+                <li><a href="">JS</a></li>
+                <li><a href="">C</a></li>
+                <li><a href="">C++</a></li>
+                <li><a href="">JAVA</a></li>
+                <li><a href="">PYTHON</a></li>
+                <li><a href="">TAILWIND</a></li>
+                <li><a href="">REACTJS</a></li>
+                <li><a href="">NEXTJS</a></li>
+            </nav>
+        </div>
+        <div class="right">
+            <nav class="navbar_c">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Course</a></li>
+                <li><a href="#">Tutorial</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+                <li class="design"><a href=" https://images.google.com/" target="_blank">Donate</a></li>
+                <li class="design"><a href=" #">Login</a></li>
+                <li class="design"><a href=" #">Sign Up</a></li>
+            </nav>
+            <nav class="navbar_d">
+                <li class="material-symbols-outlined search"><a href="#">search</a></li>
+
+            </nav>
+        </div>
+    </header>
+    <div class="container2">
+        <p>hi</p>
+    </div>
+</body>
+
+</html>

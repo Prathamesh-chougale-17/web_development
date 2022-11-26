@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table and list</title>
+    <!-- style attribute brings border to table  -->
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ul directly print dot behind sentence -->
+    <!-- ul has type in disc,square and circle -->
+
+    <ul type="square">
+        <li>This is first item of unordered list </li>
+        <li>This is second item of unordered list </li>
+        <ul type="disc">
+            <li>another one</li>
+            <li>another two</li>
+            <li>another three</li>
+        </ul>
+        <li>This is third item of unordered list </li>
+    </ul>
+    <!-- ol print alphabet,roman number,number behind sentence  -->
+    <ol type="i">
+        <li>This is first item of unordered list</li>
+        <li>This is second item of unordered list</li>
+        <li>This is third item of unordered list</li>
+    </ol>
+    <!-- table -->
+    <h3>HTML Table</h3>
+    <table>
+        <thead>
+            <!-- tr defines table row -->
+            <!-- th defines table head -->
+            <tr>
+                <th>Name</th>
+                <th>Employee Id</th>
+                <th>Employee role</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!-- td defines table data -->
+                <td>prathamesh</td>
+                <td>32425</td>
+                <td>student</td>
+            </tr>
+            <tr>
+                <td>harry</td>
+                <td>32435</td>
+                <td>teacher</td>
+            </tr>
+            <tr>
+                <td>meneas</td>
+                <td>32428</td>
+                <td>tvasgd</th>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

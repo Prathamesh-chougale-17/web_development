@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My website</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <style>
+        body {
+            height: 2000px;
+        }
+
+        header {
+            display: flex;
+            position: fixed;
+            width: 100%;
+            top: 0px;
+            left: 0px;
+            box-shadow: 0.1px 0px 3px black;
+            flex-wrap: wrap;
+            /* background-color: rgb(181, 65, 65); */
+        }
+
+        nav {
+            display: flex;
+            /* border: 2px solid red; */
+        }
+
+        .left {
+            width: 20%;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            height: 150px;
+        }
+
+        .mid {
+            width: 55%;
+            justify-content: flex-end;
+            align-items: flex-end;
+            height: 150px;
+        }
+
+        .right {
+            width: 25%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            height: 150px;
+        }
+
+        .info {
+            display: flex;
+        }
+
+        .info a {
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        #info-1 {
+            align-items: center;
+            justify-content: center;
+            margin: 10px 10px;
+            margin-top: 30px;
+            margin-left: 30px;
+        }
+
+        #info-1 a {
+            font-size: 25px;
+        }
+
+
+        #info-2 {
+            align-items: center;
+            justify-content: right;
+            margin: 0px 10px;
+            height: 50px;
+        }
+
+        .my_site {
+            margin: 0px 10px;
+        }
+
+        .my_site a:hover {
+            text-decoration: underline;
+            position: relative;
+            bottom: 2px;
+            padding: 2px 0px;
+        }
+
+        .your_site_2 {
+            margin: 0px 10px;
+        }
+
+        .your_site_2 a {
+            text-decoration: none;
+            background-color: blueviolet;
+            color: aliceblue;
+            padding: 6px;
+            border-radius: 6px;
+        }
+
+        .your_site_2 a:hover {
+            background-color: rgb(100, 11, 184);
+        }
+
+
+        #info-3 {
+            align-items: flex-end;
+            justify-content: flex-end;
+            margin-bottom: 25px;
+        }
+
+        .language_site {
+            margin: 0px 10px;
+        }
+
+        .language_site a:hover {
+            text-decoration: underline;
+            position: relative;
+            bottom: 2px;
+            padding: 2px 0px;
+        }
+
+        #info-4 {
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+            margin-right: 30px;
+        }
+
+        #info-5 {
+            align-items: center;
+            justify-content: center;
+            margin-left: 30px;
+            margin-top: 30px;
+        }
+
+        .material-symbols-outlined a {
+            position: relative;
+            text-decoration: none;
+            font-size: 32px;
+            font-variation-settings:
+                'FILL' 20,
+                'wght' 100,
+                'GRAD' 10,
+                'opsz' 48
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="left">
+            <div class="info" id="info-1">
+                <div class="item"><a href="#">ProFeoNix</a></div>
+            </div>
+            <div class="material-symbols-outlined info" id="info-5"><a href="#">home</a></div>
+        </nav>
+        <br>
+        <nav class="mid">
+            <div class="info" id="info-3">
+                <div class="language_site"><a href="#">HTML</a></div>
+                <div class="language_site"><a href="#">CSS</a></div>
+                <div class="language_site"><a href="#">JS</a></div>
+                <div class="language_site"><a href="#">C</a></div>
+                <div class="language_site"><a href="#">C++</a></div>
+                <div class="language_site"><a href="#">JAVA</a></div>
+                <div class="language_site"><a href="#">PYTHON</a></div>
+                <div class="language_site"><a href="#">TAILWIND</a></div>
+                <div class="language_site"><a href="#">REACTJS</a></div>
+                <div class="language_site"><a href="#">NEXTJS</a></div>
+            </div>
+        </nav>
+        <nav class="right">
+            <div class="info" id="info-2">
+                <div class="my_site"><a href="#">Home</a></div>
+                <div class="my_site"><a href="#">Course</a></div>
+                <div class="my_site"><a href="#">Tutorial</a></div>
+                <div class="my_site"><a href="#">Blog</a></div>
+                <div class="my_site"><a href="#">Contact</a></div>
+                <div class="your_site_2"><a href="#">Donate</a></div>
+                <div class="your_site_2"><a href="#">Login</a></div>
+                <div class="your_site_2"><a href="#">SignUp</a></div>
+            </div>
+            <div class="material-symbols-outlined info" id="info-4"><a href="#">search</a></div>
+        </nav>
+    </header>
+</body>
+
+</html>

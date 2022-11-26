@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array and object in javascipt</title>
+</head>
+
+<body>
+    <script>
+        let employee = {
+            name: "prathamesh",
+            work: "student",
+            collage: "PCCOE"
+        };
+        console.log(employee);
+
+        console.log(employee.collage);
+        console.log(employee['name']);
+
+        let prathamesh = [23, 35, 52, 21, 'pratik', "nikhil", undefined];
+        //                0   1   2   3    4         5         6  
+        console.log(prathamesh);
+        console.log(prathamesh[4]);
+
+        let object = new Array(123, 54, 64, 'name', undefined);
+        console.log(object);
+        console.log(object.length);
+        object = object.sort();//The () is important while using this function
+        console.log(object);
+        object.push("This is pushed");
+        console.log(object);
+
+    </script>
+</body>
+
+</html>

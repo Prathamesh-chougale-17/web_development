@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="backend.php">
+        <label for="name">Name</label>
+        <!-- if id"" = for"" then only label will work -->
+        <div>
+            <input type="text" name="myname" id="name">
+        </div>
+        <br>
+        <div>
+            Role:<input type="role" name="myrole">
+        </div>
+        <br>
+        <div>
+            Email:<input type="email" name="myemail">
+        </div>
+        <br>
+        <div>
+            Date:<input type="date" name="mydate">
+        </div>
+        <br>
+        <div>
+            Bonus:<input type="number" name="mynumber">
+        </div>
+        <br>
+        <div>
+            Are you eligible:<input type="checkbox" name="myeligiblity">
+        </div>
+        <br>
+        <div>
+            Gender: Male <input type="radio" name="myGender"> Female <input type="radio" name="myGender"> other <input
+                type="radio" name="myGender">
+        </div>
+        <br>
+        <div>
+            Write about yourself: <br><textarea name="mytext" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="car">Car</label>
+            <select name="mycar" id="car">
+                <option value="ind">indica</option>
+                <option value="swf">swift</option>
+            </select>
+        </div>
+        <br>
+        <div class="material-symbols-outlined">
+            <div class="material-symbols-outlined info" id="info-4"><a href="#"><input type="search">search</a></div>
+            <!-- <div  class="material-symbols-outlined info" id="info-4"><a href="#">search</a></div> -->
+            <input type="reset" value="reset">
+        </div>
+        <br>
+    </form>
+</body>
+<!-- <div  class="material-symbols-outlined info" id="info-4"><a href="#">search</a></div> -->
+
+</html>

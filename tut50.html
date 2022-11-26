@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript string Function</title>
+</head>
+
+<body>
+    <script>
+        var str = 'This is India';
+        //T h i s   i s   I n d  i  a 
+        //0 1 2 3 4 5 6 7 8 9 10 11 12
+
+        // T   h   i   s      i  s     I  n  d  i  a
+        //-13 -12 -11 -10 -9 -8 -7 -6 -5 -4 -3 -2 -1  
+
+        // First occurence of a substring
+        var position = str.indexOf('is');
+        console.log(position);
+
+        // Last occurence of a substring
+        position = str.lastIndexOf('is');
+        console.log(position);
+
+        var substr = str.slice(1, 6) //this does not include last string array and number can be negative in bracket
+        console.log(substr)
+        var substr = str.slice(-6, -1) //this does not include last string array and number can be negative in bracket
+        console.log(substr)
+        var substr = str.substring(1, 6) //this does not include last string array and number cannot be negative in bracket
+        console.log(substr)
+        var substr = str.substr(1, 6) //this include the last string array
+        console.log(substr)
+        var replace = str.replace('India', 'America');//this replace thé string in str
+        console.log(replace);
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+        var new_string = str.concat(' nothing New');//best way to concatinating the string is string1 + string2
+        console.log(new_string);
+        var blanck_space = '  I am     prathamesh    ';
+        console.log(blanck_space);
+        console.log(blanck_space.trim());
+        var char = str.charAt(3);//print the character ata that position
+        console.log(char);
+        var char = str.charCodeAt(3); //print character code number of character at that position
+        console.log(char);
+
+        console.log(str[9]);//print character at that position
+    </script>
+</body>
+
+</html>

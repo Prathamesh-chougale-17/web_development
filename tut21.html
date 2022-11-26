@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <style>
+        * {
+            /*it is important*/
+            box-sizing: border-box;
+            /* this fit two boxes side by side */
+        }
+
+        .container {
+            border: 2px solid rgb(174, 105, 25);
+            background-color: chartreuse;
+            margin: 50px auto;
+            width: 900px;
+        }
+
+        .item {
+            border: 2px solid rgb(85, 41, 206);
+            margin: 12px 3px;
+            background-color: antiquewhite;
+            padding: 12px 3px;
+
+        }
+
+        #fruits {
+            float: left;
+            width: 48%;
+        }
+
+        #computer {
+            /* float: left; */
+            clear: both;
+            width: 99.2%;
+        }
+
+        #Stationary {
+            /* clear: both; */
+            float: left;
+            width: 50%;
+        }
+
+        h1 {
+            margin: auto;
+            width: 350px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1><span>Welcome to my website</span></h1>
+        <div id="fruits" class="item">
+            <h3>fruits</h3>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni debitis
+                praesentium cupiditate nihil, facere eius! Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Magni, dolore! Tempora, deserunt impedit. Quaerat, nostrum reprehenderit. Saepe molestias dolor at ea
+                reprehenderit ducimus? Ipsa sapiente dolorum tenetur praesentium illo ducimus ratione modi repellat
+                assumenda.</p>
+        </div>
+        <div id="Stationary" class="item">
+            <h3>Stationary</h3>
+            <p id="Stationarypara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni debitis
+                praesentium cupiditate nihil, facere eius! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Molestiae, dicta. Doloremque deserunt fugit officia placeat ratione voluptatibus quam quod. At totam
+                officiis rerum provident, ipsam quidem eius velit? Nemo expedita qui a distinctio accusamus.</p>
+        </div>
+        <div id="computer" class="item">
+            <h3>computer</h3>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni debitis
+                praesentium cupiditate nihil, facere eius!</p>
+        </div>
+    </div>
+</body>
+
+</html>

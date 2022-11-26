@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 2px;
+            grid-template-areas:
+                'navbar navbar'
+                'section aside';
+        }
+
+        .item {
+            background-color: yellow;
+        }
+
+        #navbar {
+            grid-area: navbar;
+        }
+
+        #section {
+            grid-area: section;
+            justify-content: center;
+        }
+
+        #aside {
+            grid-area: aside;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="navbar" class="item">this is navbar</div>
+        <div id="section" class="item">this is section</div>
+        <div id="aside" class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam illum harum, sint
+            quae dignissimos facilis at explicabo, a minus, facere ab? Voluptas, sequi. Eum sint accusamus, quasi
+            incidunt veniam, itaque vero assumenda delectus iusto laborum consectetur ad sequi neque natus? Iure
+            adipisci aspernatur nesciunt qui unde officiis ratione eveniet accusantium ullam quas pariatur, molestias
+            sequi, quae impedit natus hic facilis maiores voluptatum. Asperiores perferendis eum voluptates cumque
+            corrupti sapiente laudantium consectetur itaque, error reprehenderit adipisci vitae, natus tempore quia
+            molestias ducimus ipsum? Beatae numquam ea officia. Eaque vel asperiores reprehenderit et dolorum rerum
+            voluptatem cupiditate obcaecati, libero iusto nemo nulla!</div>
+        <!-- <div class="item">It it Item-1</div>
+        <div class="item">It it Item-2</div>
+        <div class="item">It it Item-3</div>
+        <div class="item">It it Item-4</div>
+        <div class="item">It it Item-5</div>
+        <div class="item">It it Item-6</div>
+        <div class="item">It it Item-7</div>
+        <div class="item">It it Item-8</div>
+        <div class="item">It it Item-9</div>
+        <div class="item">It it Item-10</div>
+        <div class="item">It it Item-11</div>
+        <div class="item">It it Item-12</div>
+        <div class="item">It it Item-13</div>
+        <div class="item">It it Item-14</div> -->
+    </div>
+</body>
+
+</html>

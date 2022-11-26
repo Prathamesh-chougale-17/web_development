@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        .item {
+            display: flex;
+        }
+
+        #search {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="backend.php">
+        <label for="name">Name</label>
+        <!-- if id"" = for"" then only label will work -->
+        <div>
+            <input type="text" name="myname" id="name">
+        </div>
+        <br>
+        <label for="role">Role</label>
+        <div>
+            <input type="role" name="myrole" id="role">
+        </div>
+        <br>
+        <label for="email">Email</label>
+        <div>
+            <input type="email" name="myemail" id="email">
+        </div>
+        <br>
+        <label for="date">Date</label>
+        <div>
+            <input type="date" name="mydate" id="date">
+        </div>
+        <br>
+        <label for="bonus">Bonus</label>
+        <div>
+            <input type="number" name="mynumber" id="bonus">
+        </div>
+        <br>
+        <label for="eligiblity">Are you eligible</label>
+        <div>
+            <input type="checkbox" name="myeligiblity" id="eligiblity">
+        </div>
+        <br>
+        <label for="gender">Gender</label>
+        <div>
+            Male <input type="radio" name="myGender" id="gender"> Female <input type="radio" name="myGender"> other
+            <input type="radio" name="myGender">
+        </div>
+        <br>
+        <label for="paragraph">Write about yourself</label>
+        <div>
+            <br><textarea name="mytext" cols="30" rows="10" id="paragraph"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="car">Car</label>
+            <select name="mycar" id="car">
+                <option value="ind">indica</option>
+                <option value="swf">swift</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Sumbit">
+            <input type="reset" value="reset">
+        </div>
+        <br>
+        <div class="item">
+            <input type="search" id="search">
+            <label for="search" class="material-symbols-outlined">search</label>
+            <span class="material-symbols-outlined">search</span>
+        </div>
+    </form>
+</body>
+
+</html>

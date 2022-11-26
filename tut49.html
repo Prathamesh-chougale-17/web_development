@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript- String and its method</title>
+</head>
+
+<body>
+    <div class="cointainer">
+        <h1>This is Heading</h1>
+        <div id="contain"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, aut id. Nulla a libero tempore, consequatur
+            earum tempora aliquam minima assumenda! Id reprehenderit quod natus repellendus perferendis saepe. Explicabo
+            earum laboriosam sed accusantium eius?</p>
+    </div>
+</body>
+<script>
+    var string = "This"; //BOTH of them are OK
+    var string1 = 'This';
+    var string2 = 'Prathamesh'
+    var string3 = 'ProFeoNix'
+    var string4 = `${string2} is a 'nice' person and he has a channel called ${string3}`
+    var len = string2.length; //this say (string_name).lenght
+    var y = new String("this"); //this is constructor and the 's' is capital
+    console.log(y);
+    console.log(`lenght of name is ${len}`);
+    console.log(string + string2);
+    console.log(string);
+    console.log(string1);
+    console.log(string4);
+    document.getElementById('contain').innerHTML = '<h3>This is h3 heading by javascript</h3>';//this is modifying text on page by javascript
+</script>
+
+</html>

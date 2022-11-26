@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expriment</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One:ital@1&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0px;
+        }
+
+        body {
+            height: 2000px;
+        }
+
+        header {
+            /* display: flex; */
+            position: sticky;
+            top: 0px;
+            /* border: 2px solid rgb(62, 44, 132); */
+            /* flex-direction: column; */
+            /* width: 100%; */
+            box-shadow: 1px 0px 3px -1px black;
+        }
+
+        #navbar-1 {
+            display: flex;
+            /* box-shadow: 1px 0px 3px -1px black; */
+            /* box-shadow: 1px 0px 1px black; */
+            /* border: 1px solid rgb(62, 44, 132); */
+            /* left: 10px; */
+            /* justify-content: center; */
+            /* width: 100%; */
+            /* height: 100px; */
+        }
+
+        .main {
+            /* border: 2px solid red; */
+            display: flex;
+            margin: 30px 20px;
+        }
+
+        #main-1 {
+            align-items: center;
+            justify-content: center;
+            width: 10%;
+        }
+
+        #main-1 a {
+            font-family: 'Alumni Sans Collegiate One', sans-serif;
+            text-align: center;
+            font-size: 32px;
+            /* font-weight: bold; */
+        }
+
+        #main-2 {
+            justify-content: flex-end;
+            align-items: center;
+            width: 90%;
+            /* position: relative; */
+            align-self: flex-end;
+            /* left: 100px; */
+        }
+
+
+
+        #main-2 a {
+            font-size: 17px;
+        }
+
+        li {
+            list-style: none;
+            margin-left: 20px;
+            /* padding: 0px; */
+
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: blueviolet;
+        }
+
+        .material-symbols-outlined a {
+            color: blueviolet;
+            margin-right: 10px;
+            /* position: relative; */
+            /* text-decoration: none; */
+            font-size: 32px;
+            font-variation-settings:
+                'FILL' 20,
+                'wght' 200,
+                'GRAD' 40,
+                'opsz' 88
+        }
+
+        #navbar-2 {
+            display: flex;
+            align-items: center;
+            padding: 7px 0px;
+            position: relative;
+            left: 0px;
+            box-sizing: border-box;
+            border: 1px solid rgb(227, 223, 233);
+        }
+
+        .left {
+            display: flex;
+            width: 10%;
+            justify-content: center;
+        }
+
+        .middle {
+            width: 70%;
+        }
+
+
+        .middle ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .middle a {
+            padding: 2px;
+        }
+
+        .right {
+            display: flex;
+            align-items: center;
+            width: 20%;
+            justify-content: flex-end;
+        }
+
+        .yourinfo a {
+            background-color: blueviolet;
+            color: aliceblue;
+            padding: 7px;
+            border-radius: 8px;
+        }
+
+        .right input {
+            width: 230px;
+            height: 30px;
+            border: 2px solid blueviolet;
+            border-radius: 4px;
+            font-size: 15px;
+        }
+
+        .language a:hover {
+            margin: 6px 0px;
+            border-bottom: 2px solid blueviolet;
+            position: relative;
+            bottom: 2px;
+        }
+
+        .myinfo a:hover {
+            position: relative;
+            bottom: 2px;
+            margin: 6px 0px;
+            border-bottom: 2px solid blueviolet;
+            /* text-decoration: underline; */
+            /* border-bottom: 1px solid blueviolet; */
+        }
+
+        .yourinfo a:hover {
+            background-color: rgb(125, 35, 210);
+        }
+
+        /* .main a {
+            text-decoration: none;
+        } */
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar" id="navbar-1">
+            <div class="main" id="main-1"><a href="#">ProFeoNix</a></div>
+            <div class="main" id="main-2">
+                <li class="myinfo" id="myinfo-1"><a href="#">Home</a></li>
+                <li class="myinfo" id="myinfo-2"><a href="#">Course</a></li>
+                <li class="myinfo" id="myinfo-3"><a href="#">Tutorial</a></li>
+                <li class="myinfo" id="myinfo-4"><a href="#">Blog</a></li>
+                <li class="myinfo" id="myinfo-5"><a href="#">Contact</a></li>
+                <li class="yourinfo" id="yourinfo-1"><a href="#">Donate</a></li>
+                <li class="yourinfo" id="yourinfo-2"><a href="#">Login</a></li>
+                <li class="yourinfo" id="yourinfo-3"><a href="#">SignUp</a></li>
+            </div>
+        </nav>
+        <nav class="navbar" id="navbar-2">
+            <div class="left material-symbols-outlined"><a href="http://127.0.0.1:5500/first_project.html"
+                    target="_blank">house</a>
+            </div>
+            <div class="middle">
+                <ul>
+                    <li class="language"><a href="#">HTML</a></li>
+                    <li class="language"><a href="#">CSS</a></li>
+                    <li class="language"><a href="#">JS</a></li>
+                    <li class="language"><a href="#">C</a></li>
+                    <li class="language"><a href="#">C++</a></li>
+                    <li class="language"><a href="#">JAVA</a></li>
+                    <li class="language"><a href="#">PYTHON</a></li>
+                    <li class="language"><a href="#">TAILWIND</a></li>
+                    <li class="language"><a href="#">REACTJS</a></li>
+                    <li class="language"><a href="#">NEXTJS</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <input type="search" name="mysearch" placeholder="  Search" id="search">
+                <label for="search">
+                    <div class=" material-symbols-outlined"><a>search</a></div>
+                </label>
+            </div>
+        </nav>
+    </header>
+</body>
+
+</html>

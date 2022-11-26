@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code with prathamesh</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        header {
+            position: relative;
+            /* width: 1500px; */
+        }
+
+        header::before {
+            content: "";
+            background: url(https://media.istockphoto.com/photos/mountain-landscape-picture-id517188688?k=20&m=517188688&s=612x612&w=0&h=i38qBm2P-6V4vZVEaMy_TaTEaoCMkYhvLCysE7yJQ5Q=);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .nav {
+            width: 1500px;
+        }
+
+        .nav ul {
+            overflow: auto;
+        }
+
+        .nav li {
+            margin: 12px 8px;
+            float: right;
+            list-style: none;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .alt {
+            background-color: blueviolet;
+            padding: 6px 20px;
+            border-radius: 8px;
+        }
+
+        .falt {
+            padding: 6px 2px;
+        }
+
+        .falt a:hover {
+            color: rgb(239, 237, 244);
+        }
+
+        .alt:hover {
+            background-color: rgb(97, 10, 177);
+        }
+
+        .alt a {
+            color: white;
+        }
+
+
+        .title {
+            float: left;
+            padding: 4px 4px;
+            margin: 10px 0px;
+        }
+
+        .title a {
+            font-size: 22px;
+            color: blueviolet;
+        }
+
+        .title a:hover {
+            color: white;
+        }
+
+        .navsub {
+            margin: auto;
+        }
+
+        .navsub ul {
+            margin: 20px 20px;
+            width: 1090px;
+            height: 34px;
+        }
+
+        .navsub li {
+            display: inline;
+            margin: 8px 12px;
+            list-style: none;
+            float: right;
+        }
+
+        .navsub li a {
+            font-size: 17px;
+            text-decoration: none;
+            color: blueviolet;
+            font: bold;
+        }
+
+        .navsub a:hover {
+            color: white;
+        }
+
+        .material-symbols-outlined a {
+            color: blueviolet;
+            position: relative;
+            text-decoration: none;
+            font-size: 32px;
+            font-variation-settings:
+                'FILL' 20,
+                'wght' 100,
+                'GRAD' 10,
+                'opsz' 48
+        }
+
+        img {
+            height: 1200px;
+            width: 1600px;
+        }
+
+        #search {
+            float: right;
+            margin: -52px 34px;
+            color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="height: 2000px;">
+        <header>
+
+            <nav class="nav">
+
+                <ul>
+                    <div class="title"><a href="#"><b>Code With Prathamesh</b></a></div>
+                    <li class="head alt"><a href="#">Sign up</a></li>
+                    <li class="head alt"><a href="#">Login</a></li>
+                    <li class="head alt"><a href="#">Donate</a></li>
+                    <li class="head falt"><a href="#">Contact</a></li>
+                    <li class="head falt"><a href="#">Blog</a></li>
+                    <li class="head falt"><a href="#">Tutorial</a></li>
+                    <li class="head falt"><a href="#">Course</a></li>
+                    <li class="head falt"><a href="#">Home</a></li>
+                </ul>
+            </nav>
+            <hr>
+            <nav class="navsub">
+                <ul>
+                    <span class="material-symbols-outlined">
+                        <a href="#">home</a>
+                    </span>
+                    <li><a href="#">NEXTJS</a></li>
+                    <li><a href="#">REACTJS</a></li>
+                    <li><a href="#">TAILWIND</a></li>
+                    <li><a href="#">PYTHON</a></li>
+                    <li><a href="#">JAVA</a></li>
+                    <li><a href="#">C++</a></li>
+                    <li><a href="#">C</a></li>
+                    <li><a href="#">JS</a></li>
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">HTML</a></li>
+                </ul>
+                <span class="material-symbols-outlined" id="search">
+                    <a href="#">search</a>
+                </span>
+            </nav>
+        </header>
+        <!-- <img src="" -->
+        <!-- alt=""> -->
+
+    </div>
+</body>
+
+</html>

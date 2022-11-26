@@ -1,0 +1,46 @@
+#navbar {
+    flex-direction: column;
+    /* width: 100%; */
+}
+
+#navbar div a {
+    font-size: small;
+    margin: -10px;
+}
+
+.button {
+    /* width: 20px; */
+    font-size: small;
+}
+
+#home h2 {
+    font-size: 25px;
+}
+
+#home p {
+    font-size: 18px;
+}
+
+#service h1 {
+    font-size: 2rem;
+}
+
+#client h1 {
+    font-size: 2rem;
+}
+
+#contact h1 {
+    font-size: 2rem;
+}
+
+.yourinfo input {
+    width: 250px;
+    height: 40px;
+}
+
+.yourinfo textarea {
+    width: 250px;
+    height: 200px;
+    font-size: large;
+    padding: 6px;
+}
