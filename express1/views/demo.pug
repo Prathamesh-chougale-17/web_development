@@ -10,20 +10,21 @@
         include style.css
 
 </head>
-
-<!-- <body>
-    <p>
-        | #{content}
-        |
-        | is very important part to render contant
-    </p> -->
+<body>
     <nav>
-        <ul><a href="">Home</a></ul>
-        <ul><a href="">service</a></ul>
-        <ul><a href="">logout</a></ul>
+        <ul><a href="/">Home</a></ul>
+        <ul><a href="/">service</a></ul>
+        <ul><a href="/">logout</a></ul>
     </nav>
         <h1>Welcome to our GYM</h1>
-    na
+    <form action="/" method="post" id="contact">
+        <input type="text" name="name" id="text" placeholder="Enter your name">
+        <input type="email" name="email" id="email" placeholder="Enter your Email">
+        <input type="gender" name="gender" id="gender" placeholder="Enter your gender">
+        <textarea name="address" id="address" cols="30" rows="10" placeholder="Enter your address"></textarea>
+        <textarea name="health" id="health" cols="30" rows="10" placeholder="Enter your health status"></textarea>
+        <button class="btn">submit</button>
+    </form >
 </body>
 
 </html>
