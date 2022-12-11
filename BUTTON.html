@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>button</title>
+    <style>
+        *,
+        *:before,
+        *:after {
+            border: 0;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        input {
+            position: fixed;
+            transform: translateX(-100%);
+        }
+
+        .toy-toggle span {
+            display: block;
+            position: absolute;
+        }
+
+        .toy-toggle>span {
+            top: 50%;
+            left: 50%;
+        }
+
+        .toy-toggle>span:not(.handle) {
+            transform: translate(-50%, -50%);
+        }
+
+        .border-1 {
+            background: #f0f0f0;
+            border-radius: 5.5em;
+            box-shadow: 0 0 0.2em 0.1em #f0f0f0;
+            width: 19em;
+            height: 11em;
+        }
+
+        .border-2 {
+            background: linear-gradient(0deg, #fff 33%, #ccc 45%);
+            box-shadow: 0 0 0.2em 0.3em #f0f0f0 inset;
+            border-radius: 4.75em;
+            width: 16.5em;
+            height: 9.5em;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="checkbox" id="toggle" name="toggle" value="is_on">
+    <label for="toggle" class="toy-toggle">
+        <span class="border-1"></span>
+        <span class="border-2"></span>
+        <span class="border-3"></span>
+        <span class="handle">
+            <span class="handle-off"></span>
+            <span class="handle-on"></span>
+        </span>
+    </label>
+</body>
+
+</html>
