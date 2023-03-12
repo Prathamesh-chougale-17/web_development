@@ -3,3 +3,5 @@
 *.c
 *.exe
 git
+package-lock.json
+package.json
