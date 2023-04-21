@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>User Registration and Login Form</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <h1>User Registration and Login Form</h1>
+        <h2 v-if="successMessage">{{ successMessage }}</h2>
+        <h2 v-if="errorMessage">{{ errorMessage }}</h2>
+        <form v-if="showRegistrationForm" @submit.prevent="registerUser">
+            <label>
+                Username:
+                <input type="text" v-model="registrationData.username" required>
+            </label>
+            <br>
+            <label>
+                Email:
+                <input type="email" v-model="registrationData.email" required>
+            </label>
+            <br>
+            <label>
+                Password:
+                <input type="password" v-model="registrationData.password" required>
+            </label>
+            <br>
+            <button type="submit">Register</button>
+        </form>
+        <form v-else @submit.prevent="loginUser">
+            <label>
+                Email:
+                <input type="email" v-model="loginData.email" required>
+            </label>
+            <br>
+            <label>
+                Password:
+                <input type="password" v-model="loginData.password" required>
+            </label>
+            <br>
+            <button type="submit">Login</button>
+        </form>
+        <button v-if="showRegistrationForm" @click="showLoginForm = true">Already have an account? Login here</button>
+        <button v-else @click="showRegistrationForm = true">Don't have an account? Register here</button>
+    </div>
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                showRegistrationForm: true,
+                showLoginForm: false,
+                registrationData: {
+                    username: '',
+                    email: '',
+                    password: ''
+                },
+                loginData: {
+                    email: '',
+                    password: ''
+                },
+                successMessage: '',
+                errorMessage: ''
+            },
+            methods: {
+                registerUser: function () {
+                    var self = this;
+                    fetch('/register', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(self.registrationData)
+                    })
+                        .then(function (response) {
+                            if (response.ok) {
+                                self.successMessage = 'Registration successful. Please log in.';
+                                self.showRegistrationForm = false;
+                                self.showLoginForm = true;
+                                self.registrationData = { username: '', email: '', password: '' };
+                            } else {
+                                self.errorMessage = 'Registration failed. Please try again.';
+                            }
+                        })
+                        .catch(function (error) {
+                            self.errorMessage = 'Registration failed. Please try again.';
+                        });
+                },
+                loginUser: function () {
+                    var self = this;
+                    fetch('/login', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(self.loginData)
+                    })
+                        .then(function (response) {
+                            if (response.ok) {
+                                self.successMessage = 'Login successful. Welcome back!';
+                            } else {
+                                self.errorMessage = 'Login failed. Please try again.';
+                            }
+                        })
+                        .catch(function (error) {
+                            self.errorMessage = 'Login failed. Please try again.';
+                        });
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

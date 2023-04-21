@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Warranty Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+            color: #666;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin: 20px 0;
+            width: 100%;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #ddd;
+        }
+
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Warranty Card</h1>
+    <p>Please fill out the following information to register your product for warranty:</p>
+    <form>
+        <table>
+            <tr>
+                <th>Product Name:</th>
+                <td><input type="text" name="product_name"></td>
+            </tr>
+            <tr>
+                <th>Serial Number:</th>
+                <td><input type="text" name="serial_number"></td>
+            </tr>
+            <tr>
+                <th>Purchase Date:</th>
+                <td><input type="date" name="purchase_date"></td>
+            </tr>
+            <tr>
+                <th>Name:</th>
+                <td><input type="text" name="name"></td>
+            </tr>
+            <tr>
+                <th>Email:</th>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <th>Phone:</th>
+                <td><input type="tel" name="phone"></td>
+            </tr>
+        </table>
+        <input type="submit" value="Submit" class="button">
+    </form>
+</body>
+
+</html>

@@ -10,6 +10,14 @@ h1 {
     text-align: center;
     color: red;
 }
+.same{
+    text-align: center;
+    justify-content: center;
+}
+div{
+    text-align: center;
+    justify-content: center;
+}
 a{
     text-decoration: none;
     color: white;
