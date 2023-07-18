@@ -10,3 +10,4 @@ package.json
 *.jpg
 .vs
 .class
+.vscode
