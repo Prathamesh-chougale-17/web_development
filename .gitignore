@@ -6,3 +6,5 @@ git
 package-lock.json
 package.json
 *.md
+*.json
+*.jpg
