@@ -9,3 +9,4 @@ package.json
 *.json
 *.jpg
 .vs
+.class
