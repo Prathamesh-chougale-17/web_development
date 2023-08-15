@@ -1,5 +1,6 @@
 const express = require("express");
 const path = require("path");
+
 const app = express();
 const port = 80;
 
@@ -9,6 +10,7 @@ const warrantyCard = document.getElementById("warranty-card");
 const warrantyInfo = document.getElementById("warranty-info");
 
 form.addEventListener("submit", (e) => {
+  console.log("inside submit");
   e.preventDefault();
 
   const name = form.elements["name"].value;
@@ -16,10 +18,17 @@ form.addEventListener("submit", (e) => {
   const purchaseDate = form.elements["purchase-date"].value;
   const warrantyLength = form.elements["warranty-length"].value;
 
+  console.log("name is ", name);
+  console.log("product is ", product);
+  console.log("purchaseDate is ", purchaseDate);
+  console.log("warrantyLength is ", warrantyLength);
+
   // Generate a unique warranty ID
   const warrantyId =
     Math.random().toString(36).substring(2, 15) +
     Math.random().toString(36).substring(2, 15);
+
+  console.log("warrantyId is ", warrantyId);
 
   // Update the warranty card with the user's information
   warrantyInfo.innerHTML = `
