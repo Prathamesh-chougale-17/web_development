@@ -62,7 +62,7 @@ app.get("/testimonial", (req, res) => {
 //send data to mongodb database
 
 app.post('/contact', (req, res) => {
-    const contact_us_record = mongoose.model('User', {
+    const contact_us_record = mongoose.model('contact_us_record', {
         Name: String,
         Email: String,
         Contact_number: Number,
@@ -79,7 +79,7 @@ app.post('/contact', (req, res) => {
     });
 });
 app.post('/booking', (req, res) => {
-    const booking_record = mongoose.model('User', {
+    const booking_record = mongoose.model('booking_record', {
         Name: String,
         Email: String,
         Date: Date,
@@ -97,7 +97,7 @@ app.post('/booking', (req, res) => {
     });
 });
 app.post('/', (req, res) => {
-    const booking_record = mongoose.model('User', {
+    const booking_record = mongoose.model('booking_record', {
         Name: String,
         Email: String,
         Date: Date,
@@ -109,7 +109,7 @@ app.post('/', (req, res) => {
     console.log(myData);
 
     myData.save().then(() => {
-        res.redirect('index');
+        res.redirect('/');
     }).catch(() => {
         res.status(400).send("item was not saved to the database")
     });
