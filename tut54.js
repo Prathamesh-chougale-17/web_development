@@ -9,7 +9,7 @@ let delete_post = confirm("Do you really want to delete post? ");
 
 if (delete_post) {
     //by default this is true 
-    console.log("You have sucessfully deleted your post");
+    console.log("You have successfully deleted your post");
 }
 else {
     //by default this is false

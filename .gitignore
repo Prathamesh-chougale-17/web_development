@@ -11,3 +11,5 @@ package.json
 .vs
 .class
 .vscode
+node_modules
+```
