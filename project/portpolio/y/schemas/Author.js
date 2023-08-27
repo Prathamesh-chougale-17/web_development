@@ -1,3 +1,4 @@
+// schemas/pet.js
 export default {
     name: 'Author',
     type: 'document',
