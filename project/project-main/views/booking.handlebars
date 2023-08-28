@@ -32,6 +32,16 @@
 
     <!-- Template Stylesheet -->
     <link href="../static/css/style.css" rel="stylesheet">
+    <script>
+        // code for date that should be greater than today
+        $(function validate() {
+            $('#datetimepicker').datetimepicker({
+                format: 'DD/MM/YYYY HH:mm',
+                minDate: new Date()
+            });
+        });
+
+    </script>
 </head>
 
 <body>
