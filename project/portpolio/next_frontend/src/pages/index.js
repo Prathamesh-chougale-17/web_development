@@ -2,10 +2,12 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
+import { createClient } from "next-sanity";
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+export default function Home({ blogs }) {
+  console.log(blogs);
   return (
     <>
       <Head>
@@ -111,4 +113,22 @@ export default function Home() {
       </main>
     </>
   )
+}
+
+
+export async function getServersideProps() {
+  const client = createClient({
+    projectId: "k4wqtbcn",
+    dataset: "production",
+    useCdn: true
+  });
+
+  const blogs = await client.fetch(`*[_type == "blog"]`);
+  console.log(blogs); // log the response to the console
+
+  return {
+    props: {
+      blogs
+    }
+  };
 }
