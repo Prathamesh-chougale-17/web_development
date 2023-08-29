@@ -13,20 +13,20 @@ export default function Home({ pets }) {
   return (
     <>
       <Head>
-        <Script src="https://code.jquery.com/jquery-3.4.1.min.js"></Script>
-        <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></Script>
-        <Script src="static/lib/wow/wow.min.js"></Script>
-        <Script src="static/lib/easing/easing.min.js"></Script>
+        <Script defer src="https://code.jquery.com/jquery-3.4.1.min.js"></Script>
+        <Script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></Script>
+        <Script defer src="static/lib/wow/wow.min.js"></Script>
+        <Script defer src="static/lib/easing/easing.min.js"></Script>
 
-        <Script src="static/lib/waypoints/waypoints.min.js"></Script>
-        <Script src="static/lib/counterup/counterup.min.js"></Script>
-        <Script src="static/lib/owlcarousel/owl.carousel.min.js"></Script>
-        <Script src="static/lib/tempusdominus/js/moment.min.js"></Script>
-        <Script src="static/lib/tempusdominus/js/moment-timezone.min.js"></Script>
-        <Script src="static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></Script>
+        <Script defer src="static/lib/waypoints/waypoints.min.js"></Script>
+        <Script defer src="static/lib/counterup/counterup.min.js"></Script>
+        <Script defer src="static/lib/owlcarousel/owl.carousel.min.js"></Script>
+        <Script defer src="static/lib/tempusdominus/js/moment.min.js"></Script>
+        <Script defer src="static/lib/tempusdominus/js/moment-timezone.min.js"></Script>
+        <Script defer src="static/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></Script>
 
         {/* <!-- Template JavaScript --> */}
-        <Script src="static/js/main.js"></Script>
+        <Script defer src="static/js/main.js"></Script>
         <meta charSet="utf-8" />
         <title>Flavour Paradize - Bootstrap Restaurant Template</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport" />
@@ -91,7 +91,7 @@ export default function Home({ pets }) {
       </Head>
       <div className="container-xxl bg-white p-0">
         {/* <!-- Spinner Start --> */}
-        <div
+        {/* <div
           id="spinner"
           className="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
         >
@@ -102,7 +102,7 @@ export default function Home({ pets }) {
           >
             <span className="sr-only">Loading...</span>
           </div>
-        </div>
+        </div> */}
         {/* <!-- Spinner End --> */}
 
         {/* <!-- Navbar & Hero Start --> */}
@@ -112,7 +112,7 @@ export default function Home({ pets }) {
               <h1 className="text-primary m-0">
                 <i className="fa fa-utensils me-3"></i>Flavour Paradize
               </h1>
-              {/* <!-- <img src="img/logo.png" alt="Logo"> --> */}
+              {/* <!-- <img defer src="img/logo.png" alt="Logo"> --> */}
             </a>
             <button
               className="navbar-toggler"
@@ -191,7 +191,7 @@ export default function Home({ pets }) {
                 <div className="col-lg-6 text-center text-lg-end overflow-hidden">
                   <img
                     className="img-fluid"
-                    src="static/img/chicken thali.png"
+                    defer src="static/img/chicken thali.png"
                     alt=""
                   />
                 </div>
@@ -280,14 +280,14 @@ export default function Home({ pets }) {
                     <img
                       className="img-fluid rounded w-100 wow zoomIn"
                       data-wow-delay="0.1s"
-                      src="static/img/about-1.jpg"
+                      defer src="static/img/about-1.jpg"
                     />
                   </div>
                   <div className="col-6 text-start">
                     <img
                       className="img-fluid rounded w-75 wow zoomIn"
                       data-wow-delay="0.3s"
-                      src="static/img/about-2.jpg"
+                      defer src="static/img/about-2.jpg"
                       style={{ marginTop: "25%" }}
                     />
                   </div>
@@ -295,14 +295,14 @@ export default function Home({ pets }) {
                     <img
                       className="img-fluid rounded w-75 wow zoomIn"
                       data-wow-delay="0.5s"
-                      src="static/img/about-3.jpg"
+                      defer src="static/img/about-3.jpg"
                     />
                   </div>
                   <div className="col-6 text-end">
                     <img
                       className="img-fluid rounded w-100 wow zoomIn"
                       data-wow-delay="0.7s"
-                      src="static/img/about-4.jpg"
+                      defer src="static/img/about-4.jpg"
                     />
                   </div>
                 </div>
@@ -426,7 +426,7 @@ export default function Home({ pets }) {
                       <div className="d-flex align-items-center">
                         <img
                           className="flex-shrink-0 img-fluid rounded"
-                          src="static/img/menu-1.jpg"
+                          defer src="static/img/menu-1.jpg"
                           alt=""
                           style={{ width: "80px" }}
                         />
@@ -445,7 +445,7 @@ export default function Home({ pets }) {
                       <div className="d-flex align-items-center">
                         <img
                           className="flex-shrink-0 img-fluid rounded"
-                          src="static/img/menu-2.jpg"
+                          defer src="static/img/menu-2.jpg"
                           alt=""
                           style={{ width: "80px" }}
                         />
@@ -464,7 +464,7 @@ export default function Home({ pets }) {
                       <div className="d-flex align-items-center">
                         <img
                           className="flex-shrink-0 img-fluid rounded"
-                          src="static/img/menu-3.jpg"
+                          defer src="static/img/menu-3.jpg"
                           alt=""
                           style={{ width: "80px" }}
                         />
@@ -483,7 +483,7 @@ export default function Home({ pets }) {
                       <div className="d-flex align-items-center">
                         <img
                           className="flex-shrink-0 img-fluid rounded"
-                          src="static/img/menu-4.jpg"
+                          defer src="static/img/menu-4.jpg"
                           alt=""
                           style={{ width: "80px" }}
                         />
@@ -502,7 +502,7 @@ export default function Home({ pets }) {
                       <div className="d-flex align-items-center">
                         <img
                           className="flex-shrink-0 img-fluid rounded"
-                          src="static/img/menu-5.jpg"
+                          defer src="static/img/menu-5.jpg"
                           alt=""
                           style={{ width: "80px" }}
                         />
@@ -521,7 +521,7 @@ export default function Home({ pets }) {
                       <div className="d-flex align-items-center">
                         <img
                           className="flex-shrink-0 img-fluid rounded"
-                          src="static/img/menu-6.jpg"
+                          defer src="static/img/menu-6.jpg"
                           alt=""
                           style={{ width: "80px" }}
                         />
@@ -540,7 +540,7 @@ export default function Home({ pets }) {
                       <div className="d-flex align-items-center">
                         <img
                           className="flex-shrink-0 img-fluid rounded"
-                          src="static/img/menu-7.jpg"
+                          defer src="static/img/menu-7.jpg"
                           alt=""
                           style={{ width: "80px" }}
                         />
@@ -559,7 +559,7 @@ export default function Home({ pets }) {
                       <div className="d-flex align-items-center">
                         <img
                           className="flex-shrink-0 img-fluid rounded"
-                          src="static/img/menu-8.jpg"
+                          defer src="static/img/menu-8.jpg"
                           alt=""
                           style={{ width: "80px" }}
                         />
@@ -582,7 +582,7 @@ export default function Home({ pets }) {
                       <div className="d-flex align-items-center">
                         <img
                           className="flex-shrink-0 img-fluid rounded"
-                          src="static/img/menu-1.jpg"
+                          defer src="static/img/menu-1.jpg"
                           alt=""
                           style={{ width: "80px" }}
                         />
@@ -601,7 +601,7 @@ export default function Home({ pets }) {
                       <div className="d-flex align-items-center">
                         <img
                           className="flex-shrink-0 img-fluid rounded"
-                          src="static/img/menu-2.jpg"
+                          defer src="static/img/menu-2.jpg"
                           alt=""
                           style={{ width: "80px" }}
                         />
@@ -620,7 +620,7 @@ export default function Home({ pets }) {
                       <div className="d-flex align-items-center">
                         <img
                           className="flex-shrink-0 img-fluid rounded"
-                          src="static/img/menu-3.jpg"
+                          defer src="static/img/menu-3.jpg"
                           alt=""
                           style={{ width: "80px" }}
                         />
@@ -639,7 +639,7 @@ export default function Home({ pets }) {
                       <div className="d-flex align-items-center">
                         <img
                           className="flex-shrink-0 img-fluid rounded"
-                          src="static/img/menu-4.jpg"
+                          defer src="static/img/menu-4.jpg"
                           alt=""
                           style={{ width: "80px" }}
                         />
@@ -658,7 +658,7 @@ export default function Home({ pets }) {
                       <div className="d-flex align-items-center">
                         <img
                           className="flex-shrink-0 img-fluid rounded"
-                          src="static/img/menu-5.jpg"
+                          defer src="static/img/menu-5.jpg"
                           alt=""
                           style={{ width: "80px" }}
                         />
@@ -677,7 +677,7 @@ export default function Home({ pets }) {
                       <div className="d-flex align-items-center">
                         <img
                           className="flex-shrink-0 img-fluid rounded"
-                          src="static/img/menu-6.jpg"
+                          defer src="static/img/menu-6.jpg"
                           alt=""
                           style={{ width: "80px" }}
                         />
@@ -696,7 +696,7 @@ export default function Home({ pets }) {
                       <div className="d-flex align-items-center">
                         <img
                           className="flex-shrink-0 img-fluid rounded"
-                          src="static/img/menu-7.jpg"
+                          defer src="static/img/menu-7.jpg"
                           alt=""
                           style={{ width: "80px" }}
                         />
@@ -715,7 +715,7 @@ export default function Home({ pets }) {
                       <div className="d-flex align-items-center">
                         <img
                           className="flex-shrink-0 img-fluid rounded"
-                          src="static/img/menu-8.jpg"
+                          defer src="static/img/menu-8.jpg"
                           alt=""
                           style={{ width: "80px" }}
                         />
@@ -738,7 +738,7 @@ export default function Home({ pets }) {
                       <div className="d-flex align-items-center">
                         <img
                           className="flex-shrink-0 img-fluid rounded"
-                          src="static/img/menu-1.jpg"
+                          defer src="static/img/menu-1.jpg"
                           alt=""
                           style={{ width: "80px" }}
                         />
@@ -757,7 +757,7 @@ export default function Home({ pets }) {
                       <div className="d-flex align-items-center">
                         <img
                           className="flex-shrink-0 img-fluid rounded"
-                          src="static/img/menu-2.jpg"
+                          defer src="static/img/menu-2.jpg"
                           alt=""
                           style={{ width: "80px" }}
                         />
@@ -776,7 +776,7 @@ export default function Home({ pets }) {
                       <div className="d-flex align-items-center">
                         <img
                           className="flex-shrink-0 img-fluid rounded"
-                          src="static/img/menu-3.jpg"
+                          defer src="static/img/menu-3.jpg"
                           alt=""
                           style={{ width: "80px" }}
                         />
@@ -795,7 +795,7 @@ export default function Home({ pets }) {
                       <div className="d-flex align-items-center">
                         <img
                           className="flex-shrink-0 img-fluid rounded"
-                          src="static/img/menu-4.jpg"
+                          defer src="static/img/menu-4.jpg"
                           alt=""
                           style={{ width: "80px" }}
                         />
@@ -814,7 +814,7 @@ export default function Home({ pets }) {
                       <div className="d-flex align-items-center">
                         <img
                           className="flex-shrink-0 img-fluid rounded"
-                          src="static/img/menu-5.jpg"
+                          defer src="static/img/menu-5.jpg"
                           alt=""
                           style={{ width: "80px" }}
                         />
@@ -833,7 +833,7 @@ export default function Home({ pets }) {
                       <div className="d-flex align-items-center">
                         <img
                           className="flex-shrink-0 img-fluid rounded"
-                          src="static/img/menu-6.jpg"
+                          defer src="static/img/menu-6.jpg"
                           alt=""
                           style={{ width: "80px" }}
                         />
@@ -852,7 +852,7 @@ export default function Home({ pets }) {
                       <div className="d-flex align-items-center">
                         <img
                           className="flex-shrink-0 img-fluid rounded"
-                          src="static/img/menu-7.jpg"
+                          defer src="static/img/menu-7.jpg"
                           alt=""
                           style={{ width: "80px" }}
                         />
@@ -871,7 +871,7 @@ export default function Home({ pets }) {
                       <div className="d-flex align-items-center">
                         <img
                           className="flex-shrink-0 img-fluid rounded"
-                          src="static/img/menu-8.jpg"
+                          defer src="static/img/menu-8.jpg"
                           alt=""
                           style={{ width: "80px" }}
                         />
@@ -906,7 +906,7 @@ export default function Home({ pets }) {
                   type="button"
                   className="btn-play"
                   data-bs-toggle="modal"
-                  data-src="https://www.youtube.com/embed/DWRcNpR6Kdc"
+                  data defer-src="https://www.youtube.com/embed/DWRcNpR6Kdc"
                   data-bs-target="#videoModal"
                 >
                   <span></span>
@@ -1096,7 +1096,7 @@ export default function Home({ pets }) {
                 <div className="ratio ratio-16x9">
                   <iframe
                     className="embed-responsive-item"
-                    src=""
+                    defer src=""
                     id="video"
                     allowFullScreen
                     allowscriptaccess="always"
@@ -1127,7 +1127,7 @@ export default function Home({ pets }) {
                   <div className="rounded-circle overflow-hidden m-4">
                     <img
                       className="img-fluid"
-                      src="static/img/team-1.jpg"
+                      defer src="static/img/team-1.jpg"
                       alt=""
                     />
                   </div>
@@ -1154,7 +1154,7 @@ export default function Home({ pets }) {
                   <div className="rounded-circle overflow-hidden m-4">
                     <img
                       className="img-fluid"
-                      src="static/img/team-2.jpg"
+                      defer src="static/img/team-2.jpg"
                       alt=""
                     />
                   </div>
@@ -1181,7 +1181,7 @@ export default function Home({ pets }) {
                   <div className="rounded-circle overflow-hidden m-4">
                     <img
                       className="img-fluid"
-                      src="static/img/team-3.jpg"
+                      defer src="static/img/team-3.jpg"
                       alt=""
                     />
                   </div>
@@ -1208,7 +1208,7 @@ export default function Home({ pets }) {
                   <div className="rounded-circle overflow-hidden m-4">
                     <img
                       className="img-fluid"
-                      src="static/img/team-4.jpg"
+                      defer src="static/img/team-4.jpg"
                       alt=""
                     />
                   </div>
@@ -1251,7 +1251,7 @@ export default function Home({ pets }) {
                 <div className="d-flex align-items-center">
                   <img
                     className="img-fluid flex-shrink-0 rounded-circle"
-                    src="static/img/testimonial-1.jpg"
+                    defer src="static/img/testimonial-1.jpg"
                     style={{ width: "50px", height: "50px" }}
                   />
                   <div className="ps-3">
@@ -1269,7 +1269,7 @@ export default function Home({ pets }) {
                 <div className="d-flex align-items-center">
                   <img
                     className="img-fluid flex-shrink-0 rounded-circle"
-                    src="static/img/testimonial-2.jpg"
+                    defer src="static/img/testimonial-2.jpg"
                     style={{ width: "50px", height: "50px" }}
                   />
                   <div className="ps-3">
@@ -1287,7 +1287,7 @@ export default function Home({ pets }) {
                 <div className="d-flex align-items-center">
                   <img
                     className="img-fluid flex-shrink-0 rounded-circle"
-                    src="static/img/testimonial-3.jpg"
+                    defer src="static/img/testimonial-3.jpg"
                     style={{ width: "50px", height: "50px" }}
                   />
                   <div className="ps-3">
@@ -1305,7 +1305,7 @@ export default function Home({ pets }) {
                 <div className="d-flex align-items-center">
                   <img
                     className="img-fluid flex-shrink-0 rounded-circle"
-                    src="static/img/testimonial-4.jpg"
+                    defer src="static/img/testimonial-4.jpg"
                     style={{ width: "50px", height: "50px" }}
                   />
                   <div className="ps-3">
@@ -1458,7 +1458,7 @@ export default function Home({ pets }) {
 
       {/* <!-- JavaScript Libraries --> */}
 
-      <Script src="app.js"></Script>
+      {/* <Script defer src="app.js"></Script> */}
 
       {/* <Head>
         <title>{pets[0].title}</title>
@@ -1480,7 +1480,7 @@ export default function Home({ pets }) {
             >
               By{' '}
               <Image
-                src="/vercel.svg"
+                defer src="/vercel.svg"
                 alt="Vercel Logo"
                 classNameName={styles.vercelLogo}
                 width={100}
@@ -1494,7 +1494,7 @@ export default function Home({ pets }) {
         <div classNameName={styles.center}>
           <Image
             classNameName={styles.logo}
-            src="/next.svg"
+            defer src="/next.svg"
             alt="Next.js Logo"
             width={180}
             height={37}
