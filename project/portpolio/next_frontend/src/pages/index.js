@@ -1,7 +1,8 @@
 import Head from "next/head";
 // import Image from "next/image";
 import { Inter } from "next/font/google";
-// import styles from "@/styles/Home.module.css";
+import styles from "@/styles/Home.module.css";
+
 import { createClient } from "next-sanity";
 // import PortableText from "react-portable-text";
 // import Link from "next/link";
@@ -107,18 +108,19 @@ export default function Home({ pets }) {
       <main>
         <div className="w-100 bg-white p-0">
           {/* <!-- Spinner Start --> */}
-          {/* <div
-          id="spinner"
-          className="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
-        >
           <div
-            className="spinner-border text-primary"
-            style={{ width: "3rem", height: "3rem" }}
-            role="  "
+            id="spinner"
+            className="bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
           >
-            <span className="sr-only">Loading...</span>
+            <div
+              className="spinner-border text-primary"
+              style={{ width: "3rem", height: "3rem" }}
+              role="status"
+              aria-live="polite"
+            >
+              <span className="sr-only">Loading...</span>
+            </div>
           </div>
-        </div> */}
           {/* <!-- Spinner End --> */}
 
           {/* <!-- Navbar & Hero Start --> */}
@@ -969,6 +971,7 @@ export default function Home({ pets }) {
                     action=""
                     // onSubmit={validateForm}
                     method="post"
+                    autoComplete="off"
                     aria-required="true"
                   >
                     <div className="row g-3">
