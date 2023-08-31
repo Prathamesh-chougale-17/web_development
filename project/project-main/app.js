@@ -71,6 +71,14 @@ app.get("/testimonial", (req, res) => {
 });
 //send data to mongodb database
 
+const booking_record = mongoose.model('booking_record', {
+    Name: String,
+    Email: String,
+    Date: Date,
+    Number_of_people: Number,
+    Special_request: String
+});
+
 app.post('/contact', (req, res) => {
     const contact_us_record = mongoose.model('contact_us_record', {
         Name: String,
@@ -88,14 +96,9 @@ app.post('/contact', (req, res) => {
         res.status(400).send("item was not saved to the database")
     });
 });
+
 app.post('/booking', (req, res) => {
-    const booking_record = mongoose.model('booking_record', {
-        Name: String,
-        Email: String,
-        Date: Date,
-        Number_of_people: Number,
-        Special_request: String
-    });
+
 
     let myData = new booking_record(req.body);
     console.log(myData);
@@ -107,13 +110,6 @@ app.post('/booking', (req, res) => {
     });
 });
 app.post('/', (req, res) => {
-    const booking_record = mongoose.model('booking_record', {
-        Name: String,
-        Email: String,
-        Date: Date,
-        Number_of_people: Number,
-        Special_request: String
-    });
 
     let myData = new booking_record(req.body);
     console.log(myData);
