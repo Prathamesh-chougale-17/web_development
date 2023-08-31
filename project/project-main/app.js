@@ -14,7 +14,7 @@ const port = 80;
 const url = `mongodb+srv://prathamesh17170:prathamesh123@cluster0.3erfosm.mongodb.net/?retryWrites=true&w=majority`;
 const connectionParams = {
     useNewUrlParser: true,
-    useCreateIndex: true,
+    // useCreateIndex: true,
     useUnifiedTopology: true
 }
 mongoose.connect(url, connectionParams)
