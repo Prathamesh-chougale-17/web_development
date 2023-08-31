@@ -11,9 +11,19 @@ const app = express();
 const port = 80;
 
 // app.use(bodyParser.json());
-
-mongoose.connect('mongodb://127.0.0.1:27017/myapp');
-
+const url = `mongodb+srv://prathamesh17170:prathamesh123@cluster0.3erfosm.mongodb.net/?retryWrites=true&w=majority`;
+const connectionParams = {
+    useNewUrlParser: true,
+    useCreateIndex: true,
+    useUnifiedTopology: true
+}
+mongoose.connect(url, connectionParams)
+    .then(() => {
+        console.log('Connected to the database ')
+    })
+    .catch((err) => {
+        console.error(`Error connecting to the database. n${err}`);
+    })
 // For using static files
 app.use("/static", express.static("static"));
 app.use(bodyParser.urlencoded({ extended: false }))
