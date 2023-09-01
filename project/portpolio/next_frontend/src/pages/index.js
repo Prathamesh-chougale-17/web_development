@@ -1,15 +1,29 @@
 import Head from "next/head";
 // import Image from "next/image";
 import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
+// import styles from "@/styles/Home.module.css";
+
+import Link from "next/link";
+
+const client = createClient({
+  projectId: "k4wqtbcn",
+  dataset: "production",
+  apiVersion: "2021-10-14",
+  useCdn: false,
+});
 
 import { createClient } from "next-sanity";
 // import PortableText from "react-portable-text";
 // import Link from "next/link";
 import Script from "next/script";
+import imageUrlBuilder from "@sanity/image-url";
+
+const builder = imageUrlBuilder(client);
+
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home({ pets }) {
+  console.log(builder.image(pets.image).url());
   return (
     <>
       <Head>
@@ -1158,6 +1172,7 @@ export default function Home({ pets }) {
           {/* <!-- Reservation Start --> */}
 
           {/* <!-- Team Start --> */}
+
           <div className="w-100 pt-5 pb-3">
             <div className="container">
               <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
@@ -1167,35 +1182,56 @@ export default function Home({ pets }) {
                 <h1 className="mb-5">Our Master Chefs</h1>
               </div>
               <div className="row g-4">
-                <div
-                  className="col-lg-3 col-md-6 wow fadeInUp"
-                  data-wow-delay="0.1s"
-                >
-                  <div className="team-item text-center rounded overflow-hidden">
-                    <div className="rounded-circle overflow-hidden m-4">
-                      <img
-                        className="img-fluid"
-                        defer
-                        src="static/img/team-1.jpg"
-                        alt=""
-                      />
-                    </div>
-                    <h5 className="mb-0">Full Name</h5>
-                    <small>Designation</small>
-                    <div className="d-flex justify-content-center mt-3">
-                      <a className="btn btn-square btn-primary mx-1" href="">
-                        <i className="fab fa-facebook-f"></i>
-                      </a>
-                      <a className="btn btn-square btn-primary mx-1" href="">
-                        <i className="fab fa-twitter"></i>
-                      </a>
-                      <a className="btn btn-square btn-primary mx-1" href="">
-                        <i className="fab fa-instagram"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div
+                {pets.map((pet) => {
+                  return (
+                    <Link
+                      key={pet.slug}
+                      href={"/blog/" + pet.slug.current}
+                      legacyBehavior
+                    >
+                      <div
+                        className="col-lg-3 col-md-6 wow fadeInUp"
+                        data-wow-delay="0.1s"
+                      >
+                        <a href="">
+                          <div className="team-item text-center rounded overflow-hidden">
+                            <div className="rounded-circle overflow-hidden m-4">
+                              <img
+                                className="img-fluid"
+                                defer
+                                src={`${
+                                  builder.image(pet.image).width(200).url() ||
+                                  "static/img/team-1.jpg"
+                                }`}
+                                alt=""
+                              />
+                            </div>
+                            <h5 className="mb-0">{pet.name}</h5>
+                            <small>Designation</small>
+                            <div className="d-flex justify-content-center mt-3">
+                              {/* <a
+                                className="btn btn-square btn-primary mx-1"
+                                href=""
+                              >
+                                <i className="fab fa-facebook-f"></i>
+                              </a>
+                              <a
+                                className="btn btn-square btn-primary mx-1"
+                                href=""
+                              >
+                                <i className="fab fa-twitter"></i>
+                              </a>
+                              <a
+                                className="btn btn-square btn-primary mx-1"
+                                href=""
+                              >
+                                <i className="fab fa-instagram"></i>
+                              </a> */}
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      {/* <div
                   className="col-lg-3 col-md-6 wow fadeInUp"
                   data-wow-delay="0.3s"
                 >
@@ -1222,8 +1258,8 @@ export default function Home({ pets }) {
                       </a>
                     </div>
                   </div>
-                </div>
-                <div
+                </div> */}
+                      {/* <div
                   className="col-lg-3 col-md-6 wow fadeInUp"
                   data-wow-delay="0.5s"
                 >
@@ -1250,8 +1286,8 @@ export default function Home({ pets }) {
                       </a>
                     </div>
                   </div>
-                </div>
-                <div
+                </div> */}
+                      {/* <div
                   className="col-lg-3 col-md-6 wow fadeInUp"
                   data-wow-delay="0.7s"
                 >
@@ -1278,7 +1314,10 @@ export default function Home({ pets }) {
                       </a>
                     </div>
                   </div>
-                </div>
+                </div> */}
+                    </Link>
+                  );
+                })}
               </div>
             </div>
           </div>
@@ -1637,13 +1676,6 @@ export default function Home({ pets }) {
     </>
   );
 }
-
-const client = createClient({
-  projectId: "k4wqtbcn",
-  dataset: "production",
-  apiVersion: "2021-10-14",
-  useCdn: false,
-});
 
 export async function getStaticProps() {
   const pets = await client.fetch(`*[_type == "Blog"]`);
