@@ -4,7 +4,6 @@
 *.exe
 git
 package-lock.json
-package.json
 *.md
 *.json
 *.jpg
@@ -12,4 +11,3 @@ package.json
 .class
 .vscode
 node_modules
-```
