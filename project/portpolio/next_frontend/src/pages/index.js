@@ -10,7 +10,7 @@ import { createClient } from "next-sanity";
 // import Link from "next/link";
 import Script from "next/script";
 import imageUrlBuilder from "@sanity/image-url";
-import { use, useEffect } from "react";
+import { useEffect } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -1185,6 +1185,7 @@ export default function Home({ blogs }) {
               </div>
               <div className="row g-4">
                 {blogs.map((pet) => {
+                  console.log(pet.blogimage);
                   return (
                     <Link
                       key={pet.slug.current}
